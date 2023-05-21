@@ -32,6 +32,10 @@
   --white: #ffffff;
 }
 
+html {
+  font-size: 70%;
+}
+
 body {
   font-family: 'Nunito', sans-serif;
   color: var(--text-dark-1);
@@ -53,10 +57,6 @@ a {
 h1,
 h3 {
   font-weight: 700;
-}
-
-p {
-  font-size: clamp(1.2rem, 1.5vw, 4rem);
 }
 
 /* navigation */
@@ -282,7 +282,7 @@ h1 {
 
 .newsletter a {
   color: white;
-  font-size: 1.3rem;
+  font-size: smaller;
 }
 
 .newsletter input[type='submit'] {
@@ -339,6 +339,7 @@ h1 {
 
 .copyright p {
   margin: 1rem 0 0;
+  font-size: smaller;
 }
 
 /* scroll */
@@ -351,6 +352,16 @@ h1 {
     transform: translate3d(-50%, 0, 0);
   }
 }
+
+/* @keyframes scroll2 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+} */
 
 .core-values {
   height: 60vh;
@@ -372,6 +383,13 @@ h1 {
   align-items: center;
   animation: scroll 60s linear infinite;
   overflow: hidden;
+}
+
+.core-values .slide2 .animated {
+  animation: scroll 60s linear reverse infinite;
+}
+.core-values .slide4 .animated {
+  animation: scroll 60s linear reverse infinite;
 }
 
 .core-values .animated > div {
@@ -500,8 +518,7 @@ nav.demo {
 
   /* newsletter */
 
-  .newsletter h3,
-  .newsletter a {
+  .newsletter h3 {
     font-size: medium;
   }
 
