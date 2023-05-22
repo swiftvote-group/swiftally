@@ -32,10 +32,6 @@
   --white: #ffffff;
 }
 
-html {
-  font-size: 70%;
-}
-
 body {
   font-family: 'Nunito', sans-serif;
   color: var(--text-dark-1);
@@ -459,6 +455,10 @@ nav.demo {
 }
 
 @media (max-width: 500px) {
+  p {
+    font-size: 0.8rem !important;
+  }
+
   /* nav */
 
   nav .container div:first-child {
